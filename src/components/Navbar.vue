@@ -1,6 +1,6 @@
 <template>
   <header class="border-b border-gray-200 bg-white">
-    <div class="max-w-[1200px] mx-auto h-14 flex items-center gap-8 px-2">
+    <div class="max-w-270 mx-auto h-14 flex items-center gap-8 px-2">
       <div class="text-lg font-bold text-blue-600">animate</div>
 
       <nav class="flex gap-6 text-sm text-gray-700">

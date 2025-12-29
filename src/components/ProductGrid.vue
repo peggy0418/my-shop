@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-[1200px] mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 px-2"
+    class="max-w-270 mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 px-2"
   >
     <div
       v-for="p in products"

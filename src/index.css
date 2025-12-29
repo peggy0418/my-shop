@@ -1,2 +1,22 @@
 /* Tailwind v4 基礎樣式 */
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@layer base{
+    body{
+        font-family: "Noto Sans JP", sans-serif;
+    }
+}
+
+@layer utilities {
+  .text-gray-topbar {
+    color: #8c8c8c;
+  }
+
+  .text-gray-topbar:hover {
+    color: #000;
+  }
+  span.text-gray-topbar:hover{
+    color: #8c8c8c;
+    cursor: default;
+  }
+}
