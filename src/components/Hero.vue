@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <img
-      src="https://via.placeholder.com/1400x400?text=Featured+Anime+Banner"
+      src="https://picsum.photos/1400/400"
       class="w-full object-cover"
     />
     <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
