@@ -1,10 +1,12 @@
 <template>
   <div class="border-b border-gray-200 bg-gray-100">
-    <div class="max-w-270 mx-auto max-h-12 box-border flex items-center text-xs py-2">
+    <div
+      class="flex justify-between items-center flex-wrap max-w-270 mx-auto max-h-12 box-border flex items-center text-xs py-2"
+    >
       <!-- Left -->
-      <div class="flex gap-15 items-center">
+      <div class="flex gap-6 items-center md:gap-12 lg:gap-25">
         <div class="logo_area">
-          <div class="logo_box max-w-[140px]">
+          <div class="logo_box max-w-[70px] md:max-w-[140px]">
             <img src="../assets/logo.png" alt="" class="w-full h-auto" />
           </div>
         </div>
@@ -16,7 +18,7 @@
       </div>
 
       <!-- Right -->
-      <div class="ml-auto flex items-center gap-11 topbar-right">
+      <div class="ml-auto flex items-center gap-2 topbar-right md:gap-5 lg:gap-11">
         <a href="#" class="text-gray-topbar"> 新規會員登錄 </a>
         <a href="#" class="text-gray-topbar"> マイページ </a>
 
