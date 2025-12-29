@@ -1,6 +1,6 @@
 <template>
   <header class="border-b border-gray-200 bg-white">
-    <div class="max-w-270 mx-auto h-14 flex items-center gap-8 px-2">
+    <div class="flex flex-wrap max-w-270 mx-auto h-auto flex items-center gap-8 px-2">
       <nav class="flex gap-6 text-sm text-gray-700">
         <a class="hover:text-blue-600">新品</a>
         <a class="hover:text-blue-600">書籍</a>
@@ -9,7 +9,7 @@
         <a class="hover:text-blue-600">活動</a>
       </nav>
 
-      <div class="ml-auto flex items-center gap-1">
+      <div class="ml-0 lg:ml-auto flex items-center gap-1">
         <input
           class="border border-gray-300 h-8 px-2 text-sm w-44"
           placeholder="商品搜尋"

@@ -14,6 +14,8 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss(),
   ],
+  base: "/my-shop/" ,
+  build: {outDir: "docs"},
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

@@ -1,7 +1,7 @@
 <template>
   <div class="border-b border-gray-200 bg-gray-100">
     <div
-      class="flex justify-between items-center flex-wrap max-w-270 mx-auto max-h-12 box-border flex items-center text-xs py-2"
+      class="flex justify-between items-center flex-wrap max-w-270 mx-auto h-auto box-border flex items-center text-xs py-2"
     >
       <!-- Left -->
       <div class="flex gap-6 items-center md:gap-12 lg:gap-25">
@@ -18,12 +18,14 @@
       </div>
 
       <!-- Right -->
-      <div class="ml-auto flex items-center gap-2 topbar-right md:gap-5 lg:gap-11">
-        <a href="#" class="text-gray-topbar"> 新規會員登錄 </a>
-        <a href="#" class="text-gray-topbar"> マイページ </a>
+      <div
+        class="ml-0 lg:ml-auto flex items-center gap-2 topbar-right md:gap-5 lg:gap-11"
+      >
+        <a href="#" class="text-gray-topbar"> 註冊 </a>
+        <a href="#" class="text-gray-topbar"> 登入 </a>
 
         <div class="relative">
-          <a href="#" class="text-gray-topbar"> お知らせ </a>
+          <a href="#" class="text-gray-topbar"> 最新消息 </a>
           <span
             class="absolute -top-2 -right-2.5 bg-red-500 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full"
           >
