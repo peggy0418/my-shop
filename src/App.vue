@@ -1,5 +1,6 @@
 <template>
   <div class="min-h-screen bg-white text-gray-800">
+    <TopBar />
     <Navbar />
     <Hero />
     <div class="container mx-auto px-4 py-8">
@@ -7,11 +8,11 @@
       <ProductGrid />
     </div>
     <Footer />
-    <div class="bg-red-500 text-white p-4">Tailwind OK</div>
   </div>
 </template>
 
 <script setup>
+import TopBar from "./components/TopBar.vue";
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import CategoryList from "./components/CategoryList.vue";

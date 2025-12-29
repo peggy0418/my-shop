@@ -1,3 +1,2 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind v4 基礎樣式 */
+@import "tailwindcss";
