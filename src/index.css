@@ -1,17 +1,31 @@
-/* Tailwind v4 基礎樣式 */
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-@layer base{
-    body{
-        font-family: "Noto Sans JP", sans-serif;
-        box-sizing: border-box;
-    }
-    a{
-      display: block;
-    }
 
+/* ===== Base ===== */
+@layer base {
+  body {
+    font-family: "Noto Sans JP", sans-serif;
+    box-sizing: border-box;
+  }
+
+  a {
+    display: block;
+  }
 }
 
+/* ===== Components ===== */
+@layer components {
+  .nav-link {
+    @apply relative flex items-center gap-1 cursor-pointer text-gray-700 hover:text-blue-600;
+    @apply lg:my-4;
+    /* 下劃線動畫 */
+    @apply after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-blue-600
+           after:scale-x-0 after:origin-left after:transition-transform;
+    @apply hover:after:scale-x-100;
+  }
+}
+
+/* ===== Utilities ===== */
 @layer utilities {
   .text-gray-topbar {
     color: #8c8c8c;
@@ -20,11 +34,41 @@
   .text-gray-topbar:hover {
     color: #000;
   }
-  span.text-gray-topbar:hover{
-    color: #8c8c8c;
-    cursor: default;
-  }
-  .container{
+
+  .container {
     max-width: 1080px;
+  }
+  /* 手機側邊選單滑出動畫 */
+  .slide-enter-from {
+    transform: translateX(100%);
+  }
+  .slide-enter-to {
+    transform: translateX(0%);
+  }
+  .slide-enter-active {
+    transition: transform 0.3s ease-out;
+  }
+  .slide-leave-from {
+    transform: translateX(0%);
+  }
+  .slide-leave-to {
+    transform: translateX(100%);
+  }
+  .slide-leave-active {
+    transition: transform 0.3s ease-in;
+  }
+  .slide-down-enter-from,
+  .slide-down-leave-to {
+    max-height: 0;
+    opacity: 0;
+  }
+  .slide-down-enter-to,
+  .slide-down-leave-from {
+    max-height: 500px; /* 內容最大高度，可調整 */
+    opacity: 1;
+  }
+  .slide-down-enter-active,
+  .slide-down-leave-active {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
   }
 }
