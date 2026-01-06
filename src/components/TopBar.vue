@@ -88,7 +88,6 @@
 
             <!-- 手機選單內容 -->
             <div class="px-2 flex flex-col gap-2">
-              <!-- 新品 下拉 -->
               <div>
                 <button
                   @click="toggleMobileSub('新品')"
@@ -110,7 +109,6 @@
                   </div>
                 </transition>
               </div>
-
               <!-- 書籍 下拉 -->
               <div>
                 <button
@@ -133,7 +131,6 @@
                   </div>
                 </transition>
               </div>
-
               <!-- 其他不展開 -->
               <a href="#" class="text-gray-topbar">CD・BD</a>
               <a href="#" class="text-gray-topbar">角色周邊</a>
@@ -162,7 +159,7 @@
 <script setup>
 import { ref, reactive } from "vue";
 import Menu from "./Menu.vue";
-import KanaMegaMenu from "./KanaMegaMenu.vue";
+import KanaMegaMenu from "./KanaMegaMenu_mb.vue";
 
 const mobileOpen = ref(false);
 const openMobileSub = reactive({
