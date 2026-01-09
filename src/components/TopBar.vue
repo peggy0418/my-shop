@@ -65,7 +65,7 @@
             </select>
 
             <!-- 搜尋框 -->
-            <div class="w-full my-2">
+            <div class="w-full my-0 lg:my-2">
               <div
                 class="flex items-center h-8 border border-gray-300 bg-white focus-within:border-blue-600 transition"
               >

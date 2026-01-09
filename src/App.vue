@@ -2,9 +2,10 @@
   <div class="min-h-screen bg-white text-gray-800">
     <TopBar />
     <Navbar />
-    <Hero />
+
     <div class="container mx-auto px-4 py-8">
       <CategoryList />
+      <Hero />
       <ProductGrid />
     </div>
     <Footer />
