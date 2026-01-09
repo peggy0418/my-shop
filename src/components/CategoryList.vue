@@ -1,7 +1,7 @@
 <template>
   <div class="bg-blue-600 my-0 mx-auto">
     <div
-      class="bg-blue-600 max-w-270 mx-auto my-0 text-xs lg:text-lg grid grid-cols-5 items-center md:grid-cols-7 mb-4.25"
+      class="bg-blue-600 max-w-270 mx-auto my-0 text-xs lg:text-lg grid grid-cols-5 items-center md:grid-cols-7 mb-2 lg:mb-4"
     >
       <div
         v-for="cat in categories"
