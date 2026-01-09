@@ -2,9 +2,8 @@
   <div class="min-h-screen bg-white text-gray-800">
     <TopBar />
     <Navbar />
-
-    <div class="container mx-auto px-4 py-8">
-      <CategoryList />
+    <CategoryList />
+    <div class="container mx-auto">
       <Hero />
       <ProductGrid />
     </div>

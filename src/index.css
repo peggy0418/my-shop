@@ -23,6 +23,7 @@
            after:scale-x-0 after:origin-left after:transition-transform;
     @apply hover:after:scale-x-100;
   }
+
 }
 
 /* ===== Utilities ===== */
@@ -71,4 +72,5 @@
   .slide-down-leave-active {
     transition: max-height 0.3s ease, opacity 0.3s ease;
   }
+
 }
