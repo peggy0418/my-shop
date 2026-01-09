@@ -6,7 +6,7 @@
     :autoplay="{ delay: 4000 }"
     :pagination="{ clickable: true }"
     navigation
-    class="max-w-[810px] w-100% h-auto"
+    class="max-w-[1080px] w-100% h-auto mb-2 lg:mb-4"
   >
     <!-- Slide 1 -->
     <SwiperSlide>
@@ -35,8 +35,4 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 </script>
