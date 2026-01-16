@@ -38,6 +38,7 @@
 
   .container {
     max-width: 1080px;
+    padding: 20px 0;
   }
   /* 手機側邊選單滑出動畫 */
   .slide-enter-from {

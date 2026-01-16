@@ -5,6 +5,10 @@
     <CategoryList />
     <div class="container mx-auto">
       <Hero />
+      <Banner_ad />
+    </div>
+    <NewsList :news="latestNews" />
+    <div class="container mx-auto">
       <ProductGrid />
     </div>
     <Footer />
@@ -15,7 +19,9 @@
 import TopBar from "./components/TopBar.vue";
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
+import Banner_ad from "./components/Banner_ad.vue";
 import CategoryList from "./components/CategoryList.vue";
 import ProductGrid from "./components/ProductGrid.vue";
+import NewsList from "./components/NewsList.vue";
 import Footer from "./components/Footer.vue";
 </script>
