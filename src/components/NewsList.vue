@@ -1,6 +1,6 @@
 <template>
   <section class="bg-gray-100">
-    <div class="max-w-5xl mx-auto px-4 py-8">
+    <div class="max-w-5xl mx-auto py-5">
       <!-- 標題 -->
       <h2
         class="relative text-xl font-bold mb-5 pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-5 before:h-[2px] before:bg-blue-600"

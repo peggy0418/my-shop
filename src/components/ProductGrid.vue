@@ -1,21 +1,27 @@
 <template>
-  <div
-    class="max-w-270 mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 px-2"
-  >
-    <div
-      v-for="p in products"
-      :key="p.id"
-      class="border border-gray-200 p-2 hover:shadow-sm transition"
+  <div class="max-w-270 mx-auto px-2">
+    <!-- 標題 -->
+    <h2
+      class="relative text-xl font-bold mb-5 pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-5 before:h-[2px] before:bg-blue-600"
     >
-      <img :src="p.image" class="w-full aspect-[3/4] object-cover mb-2" />
+      隨機商品
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+      <div
+        v-for="p in products"
+        :key="p.id"
+        class="border border-gray-200 p-2 hover:shadow-sm transition"
+      >
+        <img :src="p.image" class="w-full aspect-[3/4] object-cover mb-2" />
 
-      <p class="text-xs leading-tight line-clamp-2 mb-1 text-gray-800">
-        {{ p.name }}
-      </p>
+        <p class="text-xs leading-tight line-clamp-2 mb-1 text-gray-800">
+          {{ p.name }}
+        </p>
 
-      <p class="text-sm font-bold text-blue-600">
-        {{ p.price }}
-      </p>
+        <p class="text-sm font-bold text-blue-600">
+          {{ p.price }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -44,12 +50,6 @@ const products = [
     id: 4,
     name: "PVC 完成品模型",
     price: "¥6,800",
-    image: "https://picsum.photos/300/400",
-  },
-  {
-    id: 5,
-    name: "Animate 限定商品",
-    price: "¥3,300",
     image: "https://picsum.photos/300/400",
   },
 ];
