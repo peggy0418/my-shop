@@ -17,6 +17,7 @@
         <Right_ad />
       </div>
     </div>
+    <BackToTop />
     <Footer />
   </div>
 </template>
@@ -31,5 +32,7 @@ import CategoryList from "./components/CategoryList.vue";
 import ProductGrid from "./components/ProductGrid.vue";
 import HotProductGrid from "./components/HotProductGrid.vue";
 import NewsList from "./components/NewsList.vue";
+import BackToTop from "./components/BackToTop.vue";
+
 import Footer from "./components/Footer.vue";
 </script>
