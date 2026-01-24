@@ -8,8 +8,14 @@
       <Banner_ad />
     </div>
     <NewsList :news="latestNews" />
-    <div class="container mx-auto">
-      <ProductGrid />
+    <div class="container mx-auto block lg:flex gap-10">
+      <div class="flex-2/3">
+        <ProductGrid />
+        <HotProductGrid />
+      </div>
+      <div class="flex-1/3 hidden lg:block">
+        <Right_ad />
+      </div>
     </div>
     <Footer />
   </div>
@@ -20,8 +26,10 @@ import TopBar from "./components/TopBar.vue";
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import Banner_ad from "./components/Banner_ad.vue";
+import Right_ad from "./components/Right_ad.vue";
 import CategoryList from "./components/CategoryList.vue";
 import ProductGrid from "./components/ProductGrid.vue";
+import HotProductGrid from "./components/HotProductGrid.vue";
 import NewsList from "./components/NewsList.vue";
 import Footer from "./components/Footer.vue";
 </script>

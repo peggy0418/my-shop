@@ -1,10 +1,10 @@
 <template>
-  <div class="max-w-270 mx-auto px-2 py-2">
+  <div class="max-w-270 mx-auto px-2">
     <!-- 標題 -->
     <h2
       class="relative text-xl font-bold mb-16 pl-8 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-5 before:h-[2px] before:bg-blue-600"
     >
-      隨機商品
+      熱門商品
     </h2>
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
       <div v-for="p in products" :key="p.id">

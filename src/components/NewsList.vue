@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-100">
+  <section class="bg-gray-100 px-2 lg:px-0">
     <div class="max-w-5xl mx-auto py-5">
       <!-- 標題 -->
       <h2
